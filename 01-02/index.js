@@ -85,3 +85,9 @@ if (prvuchenik.ocneka > vtoruchenik.ocenka) {
 } else {
   console.log("ucenkik not found");
 }
+
+const niza1 = ["book1", "book2", "book3"];
+
+for (let i = 0; i < niza1.length; i++) {
+  console.log(niza1[i]);
+}
