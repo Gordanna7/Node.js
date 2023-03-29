@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bp edit post <%= data.title %></title>
+  </head>
+  <body> <h1>Add new blogpost</h1>
+    <form method="POST" action="/post/edit"  <%= data._id %>>
+      <label for="blogpost_title">Blogpost title</label>
+      <input
+        type="text"
+        name="title"
+        id="blogpost_title"
+        placeholder="Blogpost Tittle"
+        value="<% data %>"
+        required
+      />
+    <button type="submit">Update</button>
+</body>
+</html>
