@@ -7,7 +7,7 @@ db.init();
 const app = express();
 
 app.use(express.json());
-app.get("/movies", movies.getOne);
+app.get("/movies/:id", movies.getOne);
 app.get("/movies", movies.getAll);
 app.post("/movies", movies.create);
 app.delete("/movies/:id", movies.deleteOne);
